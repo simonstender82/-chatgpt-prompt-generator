@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ChatGPT Prompt Generator</h1>
+    </header>
+    <main>
+        <div class="prompt-generator">
+            <h2>Genereer een ChatGPT prompt:</h2>
+            <button id="generate-prompt">Genereer Prompt</button>
+            <div id="prompt-output"></div>
+        </div>
+    </main>
+    <script>
+        // JavaScript code om prompts te genereren
+        document.getElementById("generate-prompt").addEventListener("click", function() {
+            // Hier kun je JavaScript gebruiken om willekeurige prompts te genereren
+            // bijvoorbeeld: haal willekeurige zinnen op uit een vooraf gedefinieerde lijst
+            const prompts = [
+                "Vertel me iets over technologie.",
+                "Wat is je favoriete wetenschappelijke onderwerp?",
+                "Kun je me een Bijbelvers delen dat je inspirerend vindt?"
+            ];
+            const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
+
+            // Toon de gegenereerde prompt op de pagina
+            document.getElementById("prompt-output").textContent = randomPrompt;
+        });
+    </script>
+</body>
+</html>
